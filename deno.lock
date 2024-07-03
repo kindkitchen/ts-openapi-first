@@ -4,7 +4,8 @@
     "specifiers": {
       "jsr:@nik-kita/brickyard@^0.3.1": "jsr:@nik-kita/brickyard@0.3.1",
       "jsr:@std/dotenv@^0.224.2": "jsr:@std/dotenv@0.224.2",
-      "npm:openapi-typescript": "npm:openapi-typescript@7.0.1_typescript@5.5.2"
+      "npm:openapi-typescript": "npm:openapi-typescript@7.0.1_typescript@5.5.2",
+      "npm:xstate": "npm:xstate@5.14.0"
     },
     "jsr": {
       "@nik-kita/brickyard@0.3.1": {
@@ -257,6 +258,10 @@
           "webidl-conversions": "webidl-conversions@3.0.1"
         }
       },
+      "xstate@5.14.0": {
+        "integrity": "sha512-3c1H8dzebSODUSY1vM86zIE3Eg+VFzElvhklaF/ZTN5K2i6HsLc4j38qn9+TF2mHPTUFXrOn4M0Cxw9m63upLA==",
+        "dependencies": {}
+      },
       "yaml-ast-parser@0.0.43": {
         "integrity": "sha512-2PTINUwsRqSd+s8XxKaJWQlUuEMHJQyEuh2edBbW8KNJz0SJPwUSD2zRWqezFEdN7IzAgeuYHFUCF7o8zRdZ0A==",
         "dependencies": {}
@@ -268,13 +273,31 @@
     }
   },
   "redirects": {
-    "https://esm.sh/xstate/dist/xstate.esm.js": "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js"
+    "https://esm.sh/xstate/dist/xstate.esm.js": "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js",
+    "https://esm.sh/xstate@latest": "https://esm.sh/xstate@5.14.0"
   },
   "remote": {
+    "https://esm.sh/v135/xstate@5.0.0/denonext/actors.js": "39d69311306cce2b7b3cefd6d0040ab4998e6ef08658e071df6ba10bca9590a1",
+    "https://esm.sh/v135/xstate@5.0.0/denonext/dev.js": "2cfa547922b055dede13529de31e335dc6b94975e305a644854b174ec8a82f6a",
+    "https://esm.sh/v135/xstate@5.0.0/denonext/dist/xstate.esm.js": "209c5e32668f55f09e71c12b95890d8ecfba8a96182a4b0f97a79c2169ff4cd8",
     "https://esm.sh/v135/xstate@5.14.0/denonext/actors.js": "5783fe1eb21fe67ab350e9cf406f8277b0fda8375b891e4b1979b248bb2046cb",
     "https://esm.sh/v135/xstate@5.14.0/denonext/dev.js": "a6e67975cabc596c6270d3b69ca7c0b4eee462a27c4a77f28e1113477d7a59de",
     "https://esm.sh/v135/xstate@5.14.0/denonext/dist/xstate.esm.js": "992a90ae778fe2dc6e1d50c37b293d530826078ebc247d39dd361eca28b08b6d",
-    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733"
+    "https://esm.sh/v135/xstate@5.14.0/denonext/xstate.mjs": "80ffda0a18d1815d12ca49f9395a77050a9c6a81e27334be4502ae82b897d8cd",
+    "https://esm.sh/xstate@5.0.0/dist/xstate.esm.js?no-dts": "f3afcbccd7b8c38f395c5be0efe96b982dab77b3928828976f62763cf8b92e09",
+    "https://esm.sh/xstate@5.0.0/dist/xstate.esm.js?no-dts&types=npm:xstate": "f3afcbccd7b8c38f395c5be0efe96b982dab77b3928828976f62763cf8b92e09",
+    "https://esm.sh/xstate@5.0.0/dist/xstate.esm.js?types=npm:xstate": "f3afcbccd7b8c38f395c5be0efe96b982dab77b3928828976f62763cf8b92e09",
+    "https://esm.sh/xstate@5.14.0": "fd5488155182bb0d8a74153c54f1d6046701e405311f7be4120d61e8600e69bc",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?@deno-types=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?@types/xstate=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?@types=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?deno-types=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?no-dts": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?no-dts,types=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?types=%27npm:xstate%27": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?types=npm:xstate": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js?types=npm:xstate@latest": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733"
   },
   "workspace": {
     "dependencies": [

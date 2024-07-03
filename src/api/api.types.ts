@@ -106,10 +106,14 @@ export namespace api {
         ERROR:
           `${M} ${P} DOES NOT EXIST!!!`
         method?: never
-        endpoint?: never
+        path?: never
       }
       : {
         method: M
-        endpoint: P
+        path: P
       })
+    & {
+      method: M
+      path: P
+    }
 }
