@@ -17,6 +17,6 @@
   "imports": {
     "@nik-kita/brickyard": "jsr:@nik-kita/brickyard@^0.3.1",
     "@std/dotenv": "jsr:@std/dotenv@^0.224.2",
-    "xstate": "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js"
+    "xstate": "https://esm.sh/xstate@latest"
   }
 }
