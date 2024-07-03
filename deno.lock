@@ -2,10 +2,14 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "jsr:@nik-kita/brickyard@^0.3.1": "jsr:@nik-kita/brickyard@0.3.1",
       "jsr:@std/dotenv@^0.224.2": "jsr:@std/dotenv@0.224.2",
       "npm:openapi-typescript": "npm:openapi-typescript@7.0.1_typescript@5.5.2"
     },
     "jsr": {
+      "@nik-kita/brickyard@0.3.1": {
+        "integrity": "e2a62da2f995f7403b7246fd88bce0691be46230d7406666de0e6b0098a7dfaf"
+      },
       "@std/dotenv@0.224.2": {
         "integrity": "29081695357e4534696c9e986b2560be29c141ccf52daa32b6c20ff5b5c64ab9"
       }
@@ -263,9 +267,18 @@
       }
     }
   },
-  "remote": {},
+  "redirects": {
+    "https://esm.sh/xstate/dist/xstate.esm.js": "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js"
+  },
+  "remote": {
+    "https://esm.sh/v135/xstate@5.14.0/denonext/actors.js": "5783fe1eb21fe67ab350e9cf406f8277b0fda8375b891e4b1979b248bb2046cb",
+    "https://esm.sh/v135/xstate@5.14.0/denonext/dev.js": "a6e67975cabc596c6270d3b69ca7c0b4eee462a27c4a77f28e1113477d7a59de",
+    "https://esm.sh/v135/xstate@5.14.0/denonext/dist/xstate.esm.js": "992a90ae778fe2dc6e1d50c37b293d530826078ebc247d39dd361eca28b08b6d",
+    "https://esm.sh/xstate@5.14.0/dist/xstate.esm.js": "614dca9860eb307415a2bd990a81aa0a70510edd601d47b37796395eb0e4f733"
+  },
   "workspace": {
     "dependencies": [
+      "jsr:@nik-kita/brickyard@^0.3.1",
       "jsr:@std/dotenv@^0.224.2"
     ]
   }
